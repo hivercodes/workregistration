@@ -1,0 +1,43 @@
+.data_container {
+  border-style: solid;
+  border-radius: 25px;
+  margin: 25px;
+  padding: 25px;
+}
+
+h1 {
+  align-self: center;
+}
+
+body {
+  background-color: black;
+}
+
+.form-group {
+  padding: 5px; 
+}
+
+.white-background {
+  background-color: white;
+  border-radius: 25px;
+  padding: 25px;
+  padding-right: 75px;
+}
+
+.btn {
+  background-color: #C3CB00;
+  color: black;
+}
+
+.btn:hover {
+  background-color: grey;
+  color: black;
+}
+
+.nav-link {
+  color: white;
+}
+
+.align_left {
+  align-self: flex-end;
+}

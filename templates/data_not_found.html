@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Data{% endblock %}
+
+{% block content %}
+<h1>No Data has been entered for today.</h1>
+<h2>Please sumbit some data here: </h2><a href=" {{ url_for('data_submission') }}">Submit data</a>
+
+{% endblock %}

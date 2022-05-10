@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Data{% endblock %}
+
+{% block content %}
+<h1>Dagens Ärenden</h1>
+<p><a href="{{ url_for('download')}}">Ladda ner dagens rapport</a> </p>
+{% for row in rows:%}
+<div class="container data_container">
+  <p>Inlagd: {{ row[0] }}</p>
+  <p>Orginal mail:</p><p> {{ row[1] }}</p>
+  <p>Företag: {{ row[2] }}</p>
+  <p>Beställare: {{ row[3] }}</p>
+  <p>Hårdvara: {{ row[4] }}</p>
+  <p>Tjänst: {{ row[5] }}</p>
+  <p>Tid: {{ row[6] }}</p>
+</div>
+
+
+{% endfor%}
+{% endblock %}
